@@ -1,0 +1,17 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "First Backend Code",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Waris"
+  ],
+  "author": "Waris",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
