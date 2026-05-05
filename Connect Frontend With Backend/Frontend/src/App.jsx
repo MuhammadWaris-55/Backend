@@ -5,19 +5,20 @@ import axios from 'axios'
 function App() {
   const [jokes, setJokes] = useState([])
 
+ 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/jokes') // if using axios then dont have to do .JSON it automaticaaly do that
+    axios.get('/api/jokes')
       .then((response) => {
         setJokes(response.data);
       })
       .catch((error) => {
         console.log(error);
       })
-  })
+  }, [])
   //Just Writing this code won't connect it with beackend , this will give CORS error
-//   CORS (Cross-Origin Resource Sharing) is a browser security mechanism that blocks requests made from one origin to a different origin — unless the server explicitly allows it.
-// What is an "Origin"?
-// An origin is the combination of protocol + domain + port:
+  //   CORS (Cross-Origin Resource Sharing) is a browser security mechanism that blocks requests made from one origin to a different origin — unless the server explicitly allows it.
+  // What is an "Origin"?
+  // An origin is the combination of protocol + domain + port:
 
 
   return (
@@ -26,13 +27,12 @@ function App() {
       <p>JOKES: {jokes.length}</p>
 
       {
-        jokes.map((joke, index) => {
+        jokes.map((joke) => (
           <div key={joke.id}>
             <h3>{joke.title}</h3>
             <p>{joke.content}</p>
           </div>
-
-        })
+        ))
       }
     </>
   )
