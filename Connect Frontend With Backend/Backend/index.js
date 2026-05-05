@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.send("Express is working")
 })
 
-app.get('/jokes', (req, res) => {
+app.get('/api/jokes', (req, res) => { //This is a standard way to write API
     const jokes = [
         {
             id: 1,

@@ -6,7 +6,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/jokes') // if using axios then dont have to do .JSON it automaticaaly do that
+    axios.get('http://localhost:5000/api/jokes') // if using axios then dont have to do .JSON it automaticaaly do that
       .then((response) => {
         setJokes(response.data);
       })
