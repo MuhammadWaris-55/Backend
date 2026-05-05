@@ -14,7 +14,7 @@ function App() {
       .catch((error) => {
         console.log(error);
       })
-  }, [])
+  })
   //Just Writing this code won't connect it with beackend , this will give CORS error
   //   CORS (Cross-Origin Resource Sharing) is a browser security mechanism that blocks requests made from one origin to a different origin — unless the server explicitly allows it.
   // What is an "Origin"?
