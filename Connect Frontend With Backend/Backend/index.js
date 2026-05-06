@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'express'; //To use this import syntax have to add "type" : "module" in package.json
 
 const app = express();
 
