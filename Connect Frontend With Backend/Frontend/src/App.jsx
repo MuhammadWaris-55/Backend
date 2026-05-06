@@ -6,7 +6,7 @@ function App() {
   const [jokes, setJokes] = useState([])
 
  
-  useEffect(() => {
+  useEffect(() => { //Handeling api with axios
     axios.get('/api/jokes')
       .then((response) => {
         setJokes(response.data);
