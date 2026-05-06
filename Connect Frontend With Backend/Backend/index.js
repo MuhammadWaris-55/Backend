@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/jokes', (req, res) => { //This is a standard way to write API
-    const jokes = [
+    const jokes = [ //Random data to work with
         {
             id: 1,
             title: "Programmer Joke",
