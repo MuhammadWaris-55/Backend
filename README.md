@@ -25,14 +25,14 @@ This repository is my personal learning log for **Express.js backend development
 | 08 | REST API Design |
 | 09 | Error Handling |
 | 10 | Working with Databases (MongoDB / PostgreSQL) |
-| 10 | Data Modelling With Mongoose(ODM for MongoDB) |
-| 11 | Authentication & Authorization (JWT, Sessions) |
-| 12 | Environment Variables & Config |
-| 13 | File Uploads (Multer) |
-| 14 | WebSockets with Express |
-| 15 | Rate Limiting & Security (Helmet, CORS) |
-| 16 | MVC Project Structure |
-| 17 | Deployment (Railway / Render / VPS) |
+| 11 | Data Modelling With Mongoose(ODM for MongoDB) |
+| 12 | Authentication & Authorization (JWT, Sessions) |
+| 13 | Environment Variables & Config |
+| 14 | File Uploads (Multer) |
+| 15 | WebSockets with Express |
+| 16 | Rate Limiting & Security (Helmet, CORS) |
+| 17 | MVC Project Structure |
+| 18 | Deployment (Railway / Render / VPS) |
 
 ---
 
