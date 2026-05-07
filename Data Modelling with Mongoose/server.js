@@ -17,6 +17,10 @@ app.get('/About' , (req, res) => {
     res.send("Wellcome to About us ")
 })
 
+app.get('/Contact' , (req, res) => {
+    res.send("Connect With us On Github")
+})
+
 app.listen(port , () => {
     console.log(`app is running on http://localhost:${port}`)
 })
