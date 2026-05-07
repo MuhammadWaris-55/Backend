@@ -25,6 +25,7 @@ This repository is my personal learning log for **Express.js backend development
 | 08 | REST API Design |
 | 09 | Error Handling |
 | 10 | Working with Databases (MongoDB / PostgreSQL) |
+| 10 | Data Modelling With Mongoose(ODM for MongoDB) |
 | 11 | Authentication & Authorization (JWT, Sessions) |
 | 12 | Environment Variables & Config |
 | 13 | File Uploads (Multer) |
