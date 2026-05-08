@@ -13,6 +13,10 @@ app.get('/signup' , (req, res) => {
     res.send("SignUp to access to full content")
 })
 
+app.get('/signin' , (req, res) => {
+    res.send("Signin with Google")
+})
+
 app.get('/About' , (req, res) => {
     res.send("Wellcome to About us ")
 })
