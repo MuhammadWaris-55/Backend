@@ -17,6 +17,10 @@ app.get('/signin' , (req, res) => {
     res.send("Signin with Google")
 })
 
+app.get('/login' , (req, res) => {
+    res.send("login with X(formarly twitter)")
+})
+
 app.get('/About' , (req, res) => {
     res.send("Wellcome to About us ")
 })
