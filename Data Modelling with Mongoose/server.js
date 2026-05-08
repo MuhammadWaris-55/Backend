@@ -3,8 +3,10 @@ import 'dotenv/config';
 
 const app = express();
 
+//PORT defined in .env file
 const port = process.env.PORT;
 
+// Making Routes
 app.get('/' , (req , res) => {
     res.send("Express server is working ")
 })
