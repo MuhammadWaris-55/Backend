@@ -3,7 +3,9 @@
 import mongoose from 'mongoose'
 
 //Schema is a method that takes object
-const userSchema = new mongoose.Schema({})
+const userSchema = new mongoose.Schema({})  //Schema = Blueprint / Template
+// It defines the structure of your data — what fields exist, what type they are, and any rules.
 
 //model() takes 2 parameters , kiya model banaun or kiske base pe banaon , basis defined already which is userSchema
-export const User = mongoose.model("User" , userSchema)
+export const User = mongoose.model("User" , userSchema)  //Model = The Worker built from that blueprint
+// It's the actual tool you use to create, read, update, delete data in MongoDB.
