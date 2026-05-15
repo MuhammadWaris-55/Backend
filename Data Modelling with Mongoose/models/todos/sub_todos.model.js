@@ -9,3 +9,5 @@ const userSchema = new mongoose.Schema({})  //Schema = Blueprint / Template
 //model() takes 2 parameters , kiya model banaun or kiske base pe banaon , basis defined already which is userSchema
 export const User = mongoose.model("User" , userSchema)  //Model = The Worker built from that blueprint
 // It's the actual tool you use to create, read, update, delete data in MongoDB.
+
+//When this name "User" will go in database it will be changed in "users" , it is the standarized way in MongoDB that any name you give will be changed in plural and in lowercase
