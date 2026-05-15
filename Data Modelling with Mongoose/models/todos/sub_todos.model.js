@@ -4,15 +4,32 @@ import mongoose from 'mongoose'
 
 //Schema is a method that takes object
 const userSchema = new mongoose.Schema(
-    { //This is basic way of Storing Data Fields
-        username: String,
-        email: String,
-        isActive: Boolean,
-        Password: String,
-        Age: Integer
-    },
+    // { //This is basic way of Storing Data Fields
+    //     username: String,
+    //     email: String,
+    //     isActive: Boolean,
+    //     Password: String,
+    //     Age: Integer
+    // },
     {//This is more Professional way
-        
+        username : {
+            type : String,
+            required : true,
+            unique : true
+        },
+        email : {
+            type : String,
+            required : true
+        },
+        password : {
+            type : String,
+            required : true,
+            unique : true
+        },
+        age : {
+            type : Integer,
+            required : false
+        }
     }
 )  //Schema = Blueprint / Template
 // It defines the structure of your data — what fields exist, what type they are, and any rules.
