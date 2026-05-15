@@ -3,7 +3,18 @@
 import mongoose from 'mongoose'
 
 //Schema is a method that takes object
-const userSchema = new mongoose.Schema({})  //Schema = Blueprint / Template
+const userSchema = new mongoose.Schema(
+    { //This is basic way of Storing Data Fields
+        username: String,
+        email: String,
+        isActive: Boolean,
+        Password: String,
+        Age: Integer
+    },
+    {//This is more Professional way
+        
+    }
+)  //Schema = Blueprint / Template
 // It defines the structure of your data — what fields exist, what type they are, and any rules.
 
 //model() takes 2 parameters , kiya model banaun or kiske base pe banaon , basis defined already which is userSchema
