@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema(
     {//This is more Professional way
         username: {
             type: String,
-            required: true,
+            required: [true, 'Enter Username'],
             unique: true
         },
         email: {
@@ -25,8 +25,8 @@ const userSchema = new mongoose.Schema(
         },
         password: {
             type: String,
-            required: true,
-            uppercase: true
+            required: [true , 'Password Required'],
+            min : [12 , 'Password must contain 12 characters']
         },
         age: {
             type: Integer,
