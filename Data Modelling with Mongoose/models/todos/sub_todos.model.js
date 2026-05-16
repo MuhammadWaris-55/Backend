@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema(
             type: Integer,
             required: false
         }
-    }
+    } , {timestamps: ture}
 )  //Schema = Blueprint / Template
 // It defines the structure of your data — what fields exist, what type they are, and any rules.
 
