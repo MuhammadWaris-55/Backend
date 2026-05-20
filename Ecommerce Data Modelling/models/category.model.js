@@ -9,6 +9,6 @@ const categorySchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     }
-} , {timestamps: true});
+}, { timestamps: true });
 
-export const Category = mongoose.model("Category" , categorySchema);
+export const Category = mongoose.model("Category", categorySchema);
