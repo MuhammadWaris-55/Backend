@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const medicalSchema = new mongoose.Schema({} , {timestamps: true});
+const medicalRecordSchema = new mongoose.Schema({} , {timestamps: true});
 
 
-export const Medical_Record = mongoose.model("Medical_Record" , medicalSchema);
+export const MedicalRecord = mongoose.model("MedicalRecord" , medicalRecordSchema);
