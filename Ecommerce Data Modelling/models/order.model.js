@@ -16,12 +16,12 @@ const orderItemSchema = new mongoose.Schema({
 
 
 const orderSchema = new mongoose.Schema({
-    orderPrice:{
+    orderPrice: {
         type: Number,
         required: true
     },
 
-    customer:{
+    customer: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     },
@@ -37,11 +37,11 @@ const orderSchema = new mongoose.Schema({
 
     status: {
         type: String,
-        enum: ["PENDING" , "CANCELLED" , "DELIVERED"], //it gives us choices but it bounds that we have to take a choice only from this , if spelling mistake or anything changed that the value won't go in status
+        enum: ["PENDING", "CANCELLED", "DELIVERED"], //it gives us choices but it bounds that we have to take a choice only from this , if spelling mistake or anything changed that the value won't go in status
         default: "PENDING"
     }
 
-} , {timestamps: true})
+}, { timestamps: true })
 
 
-export const Order = mongoose.model("Order" , orderSchema)
+export const Order = mongoose.model("Order", orderSchema)
