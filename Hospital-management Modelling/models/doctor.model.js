@@ -6,10 +6,10 @@ const NoOfHoursSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-     worksInHospitals: {
-           type: mongoose.Schema.Types.ObjectId,
-            ref: "Hospital"
-     }
+    worksInHospitals: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Hospital"
+    }
 })
 
 
