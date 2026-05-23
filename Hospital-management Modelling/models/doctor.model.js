@@ -14,7 +14,6 @@ const NoOfHoursSchema = new mongoose.Schema({
 
 
 
-
 const doctorSchema = new mongoose.Schema({
     name: {
         type: String,
