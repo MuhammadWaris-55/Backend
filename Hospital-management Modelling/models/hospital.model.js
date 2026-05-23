@@ -7,7 +7,16 @@ const hospitalSchema = new mongoose.Schema({
         required: true
     },
 
-    address: {
+    addressLine1: {
+        type: String,
+        required: true
+    },
+
+    addressLine2: {
+        type: String,
+    },
+
+    city: {
         type: String,
         required: true
     },
