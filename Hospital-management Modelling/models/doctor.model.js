@@ -1,6 +1,20 @@
 import mongoose from "mongoose";
 
 
+const NoOfHoursSchema = new mongoose.Schema({
+    HoursOfWork: {
+        type: Number,
+        required: true
+    },
+     worksInHospitals: {
+           type: mongoose.Schema.Types.ObjectId,
+            ref: "Hospital"
+     }
+})
+
+
+
+
 const doctorSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -22,12 +36,9 @@ const doctorSchema = new mongoose.Schema({
         default: 0,
     },
 
-    worksInHospitals: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Hospital"
-        }
-    ],
+    worksInHospitals: {
+        type: [NoOfHoursSchema]
+    },
 
     MedicalRecord: {
         type: mongoose.Schema.Types.ObjectId,
