@@ -21,6 +21,12 @@ const hospitalSchema = new mongoose.Schema({
         required: true
     },
 
+    specializedIn: [
+        {
+            type: String
+        }
+    ],
+
     doctor: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Doctor"

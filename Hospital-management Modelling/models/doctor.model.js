@@ -37,11 +37,6 @@ const doctorSchema = new mongoose.Schema({
 
     worksInHospitals: {
         type: [NoOfHoursSchema]
-    },
-
-    MedicalRecord: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "MedicalRecord"
     }
 }, { timestamps: true });
 
